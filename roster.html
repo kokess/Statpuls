@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>StatPulse: Dream Roster</title>
+</head>
+
+<body data-page="roster">
+    <div id="site-header"></div>
+    <div id="alerts" aria-live="polite"></div>
+    <main class="wrap">
+        <h1 style="margin-top:2.5rem">Your Dream Roster</h1>
+        <div class="row"><button id="clear" class="btn danger" type="button">Clear roster</button></div>
+        <div id="totals" class="stats"></div>
+        <h2>Squad</h2>
+        <div id="roster" class="grid"></div>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

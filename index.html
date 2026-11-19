@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>StatPulse: Search players and teams</title>
+</head>
+
+<body data-page="home">
+    <div id="site-header"></div>
+    <div id="alerts" aria-live="polite"></div>
+    <main class="wrap">
+        <h1 style="margin-top:2.5rem">Find any player. Build your Dream Roster.</h1>
+        <p class="muted">Search players and teams, check upcoming games, and save your squad in this browser.</p>
+        <form id="search-form" class="search" role="search">
+            <input id="q" type="search" placeholder="Try Messi, Lakers, or Arsenal"
+                aria-label="Search players or teams">
+            <select id="league" aria-label="Filter by league">
+                <option value="">All sports</option>
+                <option value="Basketball" data-league="NBA">NBA</option>
+                <option value="American Football" data-league="NFL">NFL</option>
+                <option value="Soccer" data-league="English Premier League">Premier League</option>
+                <option value="Baseball" data-league="MLB">MLB</option>
+            </select>
+            <button class="btn primary" type="submit">Search</button>
+        </form>
+        <div id="results"></div>
+        <section id="team-detail"></section>
+        <section id="recent"></section>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
